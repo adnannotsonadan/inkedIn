@@ -1,0 +1,35 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.section-title__sub {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c0392b;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.section-title__main {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  line-height: 1.15;
+}
+
+.section-title--light .section-title__main {
+  color: #0a0a0a;
+}
+
+.section-title__line {
+  width: 60px;
+  height: 3px;
+  background: #c0392b;
+  margin: 0 auto;
+}

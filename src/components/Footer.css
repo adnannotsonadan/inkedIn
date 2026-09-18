@@ -1,0 +1,141 @@
+.footer {
+  background: #050505;
+  border-top: 1px solid #1a1a1a;
+  padding-top: 64px;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+  gap: 48px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+.footer__logo-icon {
+  color: #c0392b;
+}
+
+.footer__tagline {
+  color: #666;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #333;
+  color: #888;
+  transition: all 0.2s;
+}
+
+.footer__socials a:hover {
+  border-color: #c0392b;
+  color: #c0392b;
+}
+
+.footer__col h4 {
+  font-size: 0.78rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.footer__col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__col ul li a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.footer__col ul li a:hover {
+  color: #c0392b;
+}
+
+.footer__contact {
+  gap: 12px !important;
+}
+
+.footer__contact li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 0.88rem;
+}
+
+.footer__contact li svg {
+  color: #c0392b;
+  flex-shrink: 0;
+}
+
+.footer__hours {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer__hours span {
+  font-size: 0.82rem;
+  color: #555;
+}
+
+.footer__bottom {
+  border-top: 1px solid #111;
+  text-align: center;
+  padding: 20px 24px;
+}
+
+.footer__bottom p {
+  color: #444;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

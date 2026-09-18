@@ -1,0 +1,238 @@
+.admin-login {
+  display: flex;
+  min-height: 100vh;
+  background: #0a0a0a;
+}
+
+/* Left panel */
+.admin-login__panel {
+  width: 480px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 40px;
+  border-right: 1px solid #1a1a1a;
+}
+
+.admin-login__panel-inner {
+  width: 100%;
+  max-width: 360px;
+}
+
+.admin-login__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.admin-login__logo svg {
+  color: #c0392b;
+}
+
+.admin-login__title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.admin-login__sub {
+  color: #666;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0 0 32px;
+}
+
+.admin-login__error {
+  background: rgba(192, 57, 43, 0.12);
+  border: 1px solid rgba(192, 57, 43, 0.4);
+  color: #e74c3c;
+  padding: 11px 16px;
+  font-size: 0.84rem;
+  margin-bottom: 20px;
+}
+
+.admin-login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-login__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-login__field label {
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 600;
+}
+
+.admin-login__field input {
+  background: #111;
+  border: 1px solid #2a2a2a;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 0.93rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.admin-login__field input:focus {
+  border-color: #c0392b;
+}
+
+.admin-login__field input::placeholder {
+  color: #444;
+}
+
+.admin-login__pass-wrap {
+  position: relative;
+}
+
+.admin-login__pass-wrap input {
+  padding-right: 44px;
+}
+
+.admin-login__eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.admin-login__eye:hover {
+  color: #fff;
+}
+
+.admin-login__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 13px 24px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 8px;
+  transition: background 0.2s, transform 0.2s;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+
+.admin-login__btn:hover:not(:disabled) {
+  background: #e74c3c;
+  transform: translateY(-1px);
+}
+
+.admin-login__btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.admin-login__spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.admin-login__hint {
+  margin-top: 24px;
+  font-size: 0.78rem;
+  color: #444;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.admin-login__hint code {
+  color: #888;
+  background: #161616;
+  padding: 1px 5px;
+  font-size: 0.75rem;
+}
+
+/* Right decorative panel */
+.admin-login__deco {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin-login__deco img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-login__deco-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(192,57,43,0.15) 100%);
+}
+
+.admin-login__deco-text {
+  position: absolute;
+  bottom: 48px;
+  left: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-login__deco-text span {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.1;
+}
+
+.admin-login__deco-accent {
+  color: #c0392b !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-login__deco {
+    display: none;
+  }
+
+  .admin-login__panel {
+    width: 100%;
+    border-right: none;
+  }
+}

@@ -1,0 +1,38 @@
+export const artists = [
+  {
+    id: 1,
+    name: "Marcus Kane",
+    specialty: "Realism & Portraiture",
+    experience: 12,
+    bio: "Marcus is a master of hyper-realistic portraits. His fine-shading technique brings every piece to life with photographic detail.",
+    image: "https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?w=400&q=80",
+    instagram: "@marcus.ink",
+  },
+  {
+    id: 2,
+    name: "Saya Mori",
+    specialty: "Japanese & Traditional",
+    experience: 9,
+    bio: "Trained in Osaka, Saya blends centuries-old Japanese motifs with a modern sensibility. Known for bold colour and flawless composition.",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+    instagram: "@saya.mori.ink",
+  },
+  {
+    id: 3,
+    name: "Leo Vega",
+    specialty: "Geometric & Blackwork",
+    experience: 7,
+    bio: "Leo's clean linework and mathematical precision produce stunning geometric and blackwork pieces that age beautifully.",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+    instagram: "@leo.vega.tattoo",
+  },
+  {
+    id: 4,
+    name: "Aria Stone",
+    specialty: "Minimal & Fine Line",
+    experience: 5,
+    bio: "Aria specialises in single-needle fine-line work and delicate minimalist designs perfect for first-timers and seasoned collectors alike.",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+    instagram: "@aria.stone.ink",
+  },
+];

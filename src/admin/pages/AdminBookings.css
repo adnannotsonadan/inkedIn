@@ -1,0 +1,162 @@
+.admin-bookings {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Status select */
+.admin-status-select {
+  background: transparent;
+  border: 1px solid var(--s-color, #555);
+  color: var(--s-color, #fff);
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 100px;
+  text-align: center;
+}
+
+.admin-status-select option {
+  background: #111;
+  color: #fff;
+}
+
+/* Drawer */
+.admin-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 500;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin-drawer {
+  width: 400px;
+  max-width: 100vw;
+  background: #0f0f0f;
+  border-left: 1px solid #1e1e1e;
+  height: 100%;
+  overflow-y: auto;
+  animation: slideIn 0.25s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+.admin-drawer__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 1px solid #1a1a1a;
+  gap: 12px;
+}
+
+.admin-drawer__id {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #c0392b;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.admin-drawer__name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.admin-drawer__body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-drawer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #141414;
+  gap: 12px;
+}
+
+.admin-drawer__label {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #555;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.admin-drawer__val {
+  font-size: 0.88rem;
+  color: #ccc;
+  text-align: right;
+}
+
+.admin-drawer__notes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-drawer__notes p {
+  font-size: 0.88rem;
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+  background: #111;
+  border: 1px solid #1e1e1e;
+  padding: 12px;
+}
+
+.admin-drawer__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.admin-drawer__status-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-status-pill {
+  flex: 1;
+  border: 1px solid var(--p-color);
+  background: transparent;
+  color: var(--p-color);
+  padding: 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.admin-status-pill--active,
+.admin-status-pill:hover {
+  background: var(--p-color);
+  color: #fff;
+}

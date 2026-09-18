@@ -1,0 +1,88 @@
+export const tattoos = [
+  {
+    id: 1,
+    name: "Sacred Lotus",
+    category: "Blackwork",
+    description: "Bold blackwork lotus with geometric mandala patterns.",
+    image: "https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=600&q=80",
+  },
+  {
+    id: 2,
+    name: "Wolf Spirit",
+    category: "Realism",
+    description: "Hyper-realistic wolf portrait with fine shading.",
+    image: "https://images.unsplash.com/photo-1590246814883-57c511e86a45?w=600&q=80",
+  },
+  {
+    id: 3,
+    name: "Geometric Fox",
+    category: "Geometric",
+    description: "Low-poly geometric fox with clean linework.",
+    image: "https://images.unsplash.com/photo-1612459285595-e12ef1bcbd40?w=600&q=80",
+  },
+  {
+    id: 4,
+    name: "Minimal Arrow",
+    category: "Minimal",
+    description: "Clean single-needle arrow with dotwork accents.",
+    image: "https://images.unsplash.com/photo-1526590806580-c4ccce9a74f3?w=600&q=80",
+  },
+  {
+    id: 5,
+    name: "Koi Dragon",
+    category: "Japanese",
+    description: "Traditional Japanese koi transforming into a dragon.",
+    image: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=600&q=80",
+  },
+  {
+    id: 6,
+    name: "Anchor & Rose",
+    category: "Traditional",
+    description: "Classic American traditional with bold outlines.",
+    image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600&q=80",
+  },
+  {
+    id: 7,
+    name: "Skull Mandala",
+    category: "Blackwork",
+    description: "Ornate skull surrounded by intricate mandala lace.",
+    image: "https://images.unsplash.com/photo-1570875457307-7f8e8d8b3e70?w=600&q=80",
+  },
+  {
+    id: 8,
+    name: "Hummingbird",
+    category: "Realism",
+    description: "Vibrant realistic hummingbird in full colour.",
+    image: "https://images.unsplash.com/photo-1518791841217-8f162f1912da?w=600&q=80",
+  },
+  {
+    id: 9,
+    name: "Sun & Moon",
+    category: "Minimal",
+    description: "Delicate fine-line sun and crescent moon duo.",
+    image: "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?w=600&q=80",
+  },
+  {
+    id: 10,
+    name: "Sacred Geometry",
+    category: "Geometric",
+    description: "Metatron's cube with subtle watercolour shading.",
+    image: "https://images.unsplash.com/photo-1558171813-1e8b5e4ef1f0?w=600&q=80",
+  },
+  {
+    id: 11,
+    name: "Cherry Blossom",
+    category: "Japanese",
+    description: "Full sleeve cherry blossom branch in sumi-e style.",
+    image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=600&q=80",
+  },
+  {
+    id: 12,
+    name: "Vintage Eagle",
+    category: "Traditional",
+    description: "Patriotic American eagle with banner scroll.",
+    image: "https://images.unsplash.com/photo-1559181567-c3190e9a8e6a?w=600&q=80",
+  },
+];
+
+export const categories = ["All", "Blackwork", "Realism", "Geometric", "Minimal", "Japanese", "Traditional"];
